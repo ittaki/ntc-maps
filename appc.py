@@ -59,8 +59,13 @@ st.markdown("""
     }
     
     /* Hide Streamlit components */
+            /* This fully removes the Streamlit footer and the 'hamburger' menu */
+
     header {visibility: hidden;}
     footer {visibility: hidden;}
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .stDeployButton {display:none;}
     </style>
     """, unsafe_allow_html=True)
 
