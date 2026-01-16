@@ -19,14 +19,17 @@ def get_base64_of_bin_file(bin_file):
 # 2. CSS - Fixed brackets and synchronized class names
 st.markdown("""
     <style>
+            
+    .stApp {
+        background-color: white;
+    }
+            
+
     .block-container {
         padding: 0rem !important;
         max-width: 100% !important;
     }
     
-    .stApp {
-        background-color: white;
-    }
             
     /* Fixed Header Styling */
     .custom-header {
