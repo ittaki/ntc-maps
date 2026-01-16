@@ -24,6 +24,10 @@ st.markdown("""
         max-width: 100% !important;
     }
     
+    .stApp {
+        background-color: white;
+    }
+            
     /* Fixed Header Styling */
     .custom-header {
         position: fixed;
@@ -58,14 +62,20 @@ st.markdown("""
         background-color: white;
     }
     
-    /* Hide Streamlit components */
-            /* This fully removes the Streamlit footer and the 'hamburger' menu */
+    /* THE 'HIDE EVERYTHING' SECTION */
+    /* Hide the top header bar entirely */
+    header {visibility: hidden !important;}
+    
+    /* Hide the 'Made with Streamlit' footer */
+    footer {display: none !important;}
 
-    header {visibility: hidden;}
-    footer {visibility: hidden;}
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .stDeployButton {display:none;}
+    /* Hide the decoration line at the top */
+    [data-testid="stDecoration"] {display: none !important;}
+
+    /* Hide the 'Manage App' and Menu buttons */
+    #MainMenu {visibility: hidden !important;}
+    .stDeployButton {display:none !important;}
+    [data-testid="stStatusWidget"] {display:none !important;}
     </style>
     """, unsafe_allow_html=True)
 
